@@ -102,3 +102,13 @@ Tear down the infrastructure you just created before moving on:
 terraform destroy --auto-approve
 Conclusion
 Congratulations — you've completed this hands-on lab!
+
+==================
+
+Terraform State commands
+
+terraform state list - to list out all the resources created
+terraform state rm aws_instance.ec2testtf - to delete a resource from terraform state file
+terraform state show - show details of a resource
+
+==================
