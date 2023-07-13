@@ -22,3 +22,10 @@ grep: Search for a pattern in a file or output. For example, grep "keyword" file
 chmod: Change permissions of a file or directory. For example, chmod +x script.sh will add executable permissions to the file "script.sh".
 
 sudo: Execute a command with administrative privileges. For example, sudo apt-get update will update the system using the apt package manager.
+
+sudo reboot -f
+Sudo reboot
+uptime
+timedatectl
+sudo timedatectl set-timezone Asia/Kolkata
+
