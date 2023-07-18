@@ -31,6 +31,8 @@ sudo timedatectl set-timezone Asia/Kolkata
 
 to add a user 
 ------------
-useradd jenkins
-passwd *****
+sudo adduser jenkins
+sudo sudo usermod -aG sudo jenkins - to add to sudo
+
+grep '^sudo:' /etc/group | cut -d: -f4 to check admins users list
 
