@@ -29,3 +29,8 @@ uptime
 timedatectl
 sudo timedatectl set-timezone Asia/Kolkata
 
+to add a user 
+------------
+useradd jenkins
+passwd *****
+
