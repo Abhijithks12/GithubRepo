@@ -18,9 +18,13 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 Terraform and Jenkins are commonly used tools in AWS cloud infrastructure to enable automation and manage resources. Here's how they are connected:
 
-Terraform: Terraform is an infrastructure-as-code tool used for provisioning and managing cloud resources. It allows you to define your infrastructure in a declarative configuration language (usually HashiCorp Configuration Language - HCL) and then apply that configuration to create and manage resources in the cloud. With Terraform, you can define AWS resources such as EC2 instances, S3 buckets, VPCs, security groups, etc.
+Terraform: Terraform is an infrastructure-as-code tool used for provisioning and managing cloud resources. 
+It allows you to define your infrastructure in a declarative configuration language (usually HashiCorp Configuration Language - HCL)
+and then apply that configuration to create and manage resources in the cloud. With Terraform, you can define AWS resources such as EC2 instances, S3 buckets, VPCs, security groups, etc.
 
-Jenkins: Jenkins is an open-source automation server used for continuous integration and continuous delivery (CI/CD) pipelines. It allows developers to automate various stages of the software development lifecycle, such as building, testing, and deploying applications. Jenkins provides a web-based interface to create and manage pipelines, and it integrates with version control systems like Git.
+Jenkins: Jenkins is an open-source automation server used for continuous integration and continuous delivery (CI/CD) pipelines.
+It allows developers to automate various stages of the software development lifecycle, such as building, testing, and deploying applications.
+Jenkins provides a web-based interface to create and manage pipelines, and it integrates with version control systems like Git.
 
 Connecting Terraform and Jenkins in an AWS cloud infrastructure involves setting up a CI/CD pipeline that automates the deployment of AWS resources using Terraform. Here's a general overview of the process:
 
@@ -30,13 +34,15 @@ Configure Jenkins: Install and configure the necessary plugins in Jenkins, such 
 
 AWS Credentials: Configure AWS credentials in Jenkins to allow it to interact with your AWS account. These credentials should have sufficient permissions to create and manage AWS resources.
 
-Create Jenkins Pipeline: Define a Jenkins pipeline using the Jenkinsfile, which is stored in your version control repository. This Jenkinsfile will contain the steps to execute the Terraform code and manage the infrastructure.
+Create Jenkins Pipeline: Define a Jenkins pipeline using the Jenkinsfile, which is stored in your version control repository. 
+This Jenkinsfile will contain the steps to execute the Terraform code and manage the infrastructure.
 
 Version Control Integration: Connect Jenkins to your version control system (e.g., GitHub, Bitbucket). Jenkins will automatically trigger a pipeline when changes are pushed to the repository.
 
 Terraform Code: Write the Terraform code that defines the AWS resources you want to create and manage.
 
-Terraform Commands: In the Jenkins pipeline, use Terraform commands (e.g., terraform init, terraform plan, terraform apply) to initialize the configuration, plan the changes, and apply the changes to your AWS infrastructure.
+Terraform Commands: In the Jenkins pipeline, use Terraform commands (e.g., terraform init, terraform plan, terraform apply) 
+to initialize the configuration, plan the changes, and apply the changes to your AWS infrastructure.
 
 Artifact Management: Optionally, you can store the Terraform state file as an artifact in Jenkins or use a remote backend (e.g., S3) to manage the Terraform state.
 
