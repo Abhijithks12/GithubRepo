@@ -112,3 +112,6 @@ terraform state rm aws_instance.ec2testtf - to delete a resource from terraform 
 terraform state show - show details of a resource
 
 ==================
+
+terraform apply --auto-approve -to avoid giving yes
+================
